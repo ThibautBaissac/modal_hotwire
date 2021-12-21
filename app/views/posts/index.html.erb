@@ -1,14 +1,16 @@
-<p style="color: green"><%= notice %></p>
-
 <h1>Posts</h1>
+<%= link_to "New post", "#", class: "btn btn-primary mb-5", data: {bs_toggle: "modal", bs_target: "#newPostModal" } %>
 
 <div id="posts">
   <% @posts.each do |post| %>
     <%= render post %>
-    <p>
-      <%= link_to "Show this post", post %>
-    </p>
   <% end %>
 </div>
 
-<%= link_to "New post", new_post_path %>
+<div class="modal fade" id="newPostModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <%= render partial: 'posts/modal_form', locals: { post: @post} %>
+    </div>
+  </div>
+</div>
