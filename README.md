@@ -7,7 +7,7 @@ Encapsulate forms in modal with Hotwire
 3. Quickstart
 
 ## 1. In action
-![modal_hotwire]()
+![modal_hotwire](https://user-images.githubusercontent.com/59996803/146952422-e5945f33-f549-451e-bd7e-c3f5564581e8.gif)
 
 ## 2. Stack
 - Rails 7
